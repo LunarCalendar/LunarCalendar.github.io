@@ -61,48 +61,15 @@
                 margin-left: 1.2vw;
                 margin-right: 1.2vw;
             }
-            .th {
-                flex: 30px 0 0;
-            } 
-            .week {
-                flex: 30px 1 0;
-                /* border-bottom: 1px solid #ccc;     */
-            }
-
-            /* Calendar rows */
-            .th, .week { display: flex; }
-            .th>span {
-                padding: 0 2px 2px 0;
-                text-align: right;
-                font-size: 3vw;
-                margin-bottom: 50px;
-            }
-            .week>div {
-                /* border-top: 1px solid #eee; */
-                padding: 20px 2px 2px;
-                min-height: 70px;
-                position: relative; /* allow ::after psuedo element absolute positioning */
-            }
-            .th>span, .week>div {
-                width: 100%;
-                margin-right: 5px;
-                text-align: center;
-            }
-            /* Dates */
-            .week>div::after {
-                content: attr(data-date);
-                display: block;
-                /* position: absolute; */
-                /* top: 0; right: 0px; */
-                color: #999;
-                font-size: 3vw;
-                text-align: center;
-            }
             .sunday {
                 color: red;
             }
             .saturday {
                 color: rgb(96,135,208);
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
             }
             th, td {
                 border: 1px solid #444444;
@@ -123,7 +90,7 @@
                 </div>
                 <span class="after">&gt;</span>
             </div>
-            <table style="width:100%">
+            <table>
                 <tr>
                   <th>일 / Sunday</th>
                   <th>월 / Monday</th> 
